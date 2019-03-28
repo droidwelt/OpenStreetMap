@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="droidwelt.ru.osm1.MainActivity">
+    <group
+        android:id="@+id/g1"
+        android:menuCategory="container"
+        android:orderInCategory="1">
+        <item
+            android:id="@+id/action_locate_auto"
+            android:checkable="true"
+            android:checked="false"
+            android:orderInCategory="100"
+            android:title="Автоопределение" />
+    </group>
+    <group
+        android:id="@+id/g2"
+        android:menuCategory="container"
+        android:orderInCategory="2">
+        <item
+            android:id="@+id/action_settings"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:orderInCategory="200"
+            android:title="Настройка геолокации"
+            app:showAsAction="never" />
+    </group>
+    <group
+        android:id="@+id/g3"
+        android:checkableBehavior="all"
+        android:menuCategory="container"
+        android:orderInCategory="300">
+        <item
+            android:id="@+id/map_type_0"
+            android:checked="false"
+            android:title="Полная карта" />
+        <item
+            android:id="@+id/map_type_1"
+            android:checked="false"
+            android:title="Схематичная карта" />
+    </group>
+</menu>
